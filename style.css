@@ -16,9 +16,11 @@
     width:18vw;
     height:100vh;
     padding:1%;
-  
-   
-   
+    position:fixed;
+    left:0;
+    left:0;
+   background-color: beige;
+   z-index:100;
   
 }
 
@@ -45,7 +47,7 @@
 }
 
 .center, .bottom{
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .center > div, .bottom > div{
@@ -53,14 +55,17 @@
 }
 
 .rightside{
-    margin-left: 2vw;
-    width:82vw;
+    margin-left: 8vw;
+    width:100vw;
+    padding-left: 12vw;
+    background-color: antiquewhite;
+    position:relative;
 }
 
 .header{
     display:flex;
     flex-direction:column;
-    background-color: antiquewhite;
+    height:26vh;
 }
 
 .firstline{
@@ -71,6 +76,7 @@
 
 .searchbar{
     font-size: 11px;
+    margin-top:6px;
 }
 
 .searchbar >input{
@@ -86,30 +92,33 @@
 
 .notis{
     display:flex;
-    justify-content:space-evenly;
-    width:15vw;
-    font-size: 13px;
+    justify-content:space-between;
+    width:20vw;
+    font-size: 19px;
+    padding:8px;
+
 }
 
 .bell{
-    font-size:15px;
+    font-size:20px;
     border-top: 3px dotted;
-    border-radius: 150%;
+    border-radius: 50px;
 }
 
 .user-icon{
     margin-top: -1vh;
-    height:30px;
+    height:35px;
+   
 }
 
 .firstname{
+    font-size:18px;
     font-weight: bolder;
-    text-decoration: overline;
-    transition: text-decoration 600ms ease;
+    transition: text-decoration 0.5s ease;
 }
 
 .firstname:hover{
-    text-decoration: underline;   
+    text-decoration: underline 2px;   
 }
 
 
@@ -117,4 +126,41 @@
     margin-top:3vh;
     display:flex;
     justify-content: space-between;
+}
+
+.second-left{
+    display:flex;
+    width:40vw;
+
+}
+
+.greeting{
+    margin-left:15px;
+}
+
+.hi{
+    margin-bottom: 2px;
+    font-size:13px;
+}
+
+.secondname{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+
+.second-right{
+    display:flex;
+    justify-content: space-between;
+    width:37vw;
+    margin-right: 3vw;
+    font-size:18px;
+    align-items: center;
+}
+
+.new, .upload, .share{
+    width:10vw;
+    height:6vh;
+    border-radius: 50px;
+    font-size:18px;
 }
