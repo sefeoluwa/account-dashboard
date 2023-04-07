@@ -80,6 +80,12 @@
     font-size: 19px;
 }
 
+.notis{
+    display:flex;
+    justify-content:space-evenly;
+    width:15vw;
+    font-size: 22px;
+}
 
 
 
