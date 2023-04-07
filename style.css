@@ -87,6 +87,16 @@
     font-size: 22px;
 }
 
+.bell{
+    font-size:25px;
+    border-top: 3px dotted;
+    border-radius: 150%;
+}
+
+.user-icon{
+    margin-top: -2vh;
+}
+
 
 
 .secondline{
