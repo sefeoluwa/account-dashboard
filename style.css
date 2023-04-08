@@ -181,20 +181,21 @@
 }
 
 .assets{
-    width:55vw;
+    width:60vw;
 }
 
 .asset-div{
-    color:aliceblue;
+    color:#000;
     padding: 5%;
-    border-left: 7px solid #000;
-    width: max(200px, 25vw);
+    border-left: 6px solid #000;
+    width: max(250px, 26vw);
     margin-bottom: 2vw;
     border-radius: 15px;
+    background-color: antiquewhite;
 }
 
 .asset-img{
-    width: min(max(150px, 300px));
+    width: min(max(150px, 250px));
     height: 200px;
     
 }
