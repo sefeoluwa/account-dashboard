@@ -167,4 +167,25 @@
 
 .dash-content{
     background-color:azure;
+    display:flex;
+
+}
+
+.assets{
+    width:50vw;
+}
+
+.asset-img{
+    background-color: black;
+    width:12vw;
+    height: 18vh;
+}
+
+.assets{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(12vw, 1fr));
+    grid-gap: 15px;
+    flex-grow: 1;
+    margin-right: 11px;
+
 }
