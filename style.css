@@ -7,7 +7,7 @@
 
 :root{
     --primary-color: #F8F8FF;
-    --secondary-color: #000;
+    --secondary-color: rgba(0, 0, 0, 0.76);
     --header-color: #87CEFA;
 }
 
@@ -91,6 +91,7 @@ border: 1px solid rgba(0, 0, 0, 0.45);
 .searchbar{
     font-size: 11px;
     margin-top:6px;
+    margin-left:2vw;
 }
 
 .search > i{
@@ -100,13 +101,15 @@ border: 1px solid rgba(0, 0, 0, 0.45);
 
 .searchbar >input{
     width:40vw;
-    height:4vh;
+    height:4.8vh;
     margin-left: 1vw;
     outline:none;
-    border-radius: 50px;
+    border-radius: 55px;
     border-color:aliceblue;
     padding:10px;
-    font-size: 15px;
+    font-size: 1.5em;
+    color:#fff;
+    background-color: var(--secondary-color);
 }
 
 .notis{
@@ -114,7 +117,7 @@ border: 1px solid rgba(0, 0, 0, 0.45);
     justify-content:space-between;
     width:15vw;
     font-size: 19px;
-   
+    margin-right:2vw;
 
 }
 
@@ -150,7 +153,7 @@ border: 1px solid rgba(0, 0, 0, 0.45);
 .second-left{
     display:flex;
     width:40vw;
-
+    margin-left:2vw;
 }
 
 .greeting{
@@ -182,6 +185,8 @@ border: 1px solid rgba(0, 0, 0, 0.45);
     height:6vh;
     border-radius: 50px;
     font-size:18px;
+    background: var(--secondary-color);
+    color:#fff;
 }
 
 .dash-content{
