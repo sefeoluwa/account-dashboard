@@ -126,7 +126,33 @@ background: var(--linear-background);
     font-size:20px;
     border-top: 3px dotted;
     border-radius: 50px;
+    transition: transform 0.1s ease-in-out;
 }
+
+.bell:hover{
+    transform: translateX(5px);
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    75% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  
 
 .user-icon{
     margin-top: -1vh;
@@ -242,17 +268,28 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 15px;
     background-color: var(--primary-color);
     /* From https://css.glass */
-background:var(--primary-color);
-
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
+    background:var(--primary-color);
+    z-index:0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
+
+
+
 
 .asset-img{
     width: min(max(150px, 250px));
     height: 200px;
     padding-right:3vw;
+   margin-bottom: 1.5vh;
+   overflow-x: hidden;
+  transition: margin-left 0.2s ease-in-out;
+    
+}
+
+.asset-img:hover{
+    margin-left: 3vw;
 }
 
 .asset-content{
@@ -267,6 +304,10 @@ backdrop-filter: blur(5px);
     margin-right:2vw;
     width:max(100px, 30vw);
   
+}
+
+.dash-content-right > h3{
+    font-size: 1.3em;
 }
 
 .trend-heading{
@@ -290,6 +331,7 @@ backdrop-filter: blur(5px);
     padding:8px;
     border-radius: 20px;
     width:20vw;
+    font-size:1.1em;
 }
 
 .upcoming > div, .trending > p {
@@ -304,19 +346,14 @@ backdrop-filter: blur(5px);
    
 }
 
-.announcement{
-    margin-top: 0;
+.dash-content-right > h3:nth-of-type(2){
+    margin-top: 5vh;
 }
 
 .joke1, .joke2, .joke3{
     border-bottom: 2px solid var(--secondary-color);
 }
 
-
-
-.upcoming{
-
-}
 
 .trending{
     margin-bottom: 5vh;
