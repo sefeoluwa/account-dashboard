@@ -137,7 +137,7 @@ background: var(--linear-background);
 .firstname{
     font-size:18px;
     font-weight: bolder;
-    transition: text-decoration 0.5s ease;
+    transition: text-decoration 0.5s ease-in;
 }
 
 .firstname:hover{
@@ -186,8 +186,13 @@ background: var(--linear-background);
     height:6vh;
     border-radius: 50px;
     font-size:18px;
+    transition: 'background' .5s ease-in;
+    color:#000;
+}
+
+.new:hover, .upload:hover, .share:hover{
     background: var(--linear-background);
-    color:#fff;
+    color: #fff;
 }
 
 .dash-content{
