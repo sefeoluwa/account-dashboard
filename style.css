@@ -382,7 +382,7 @@ img > i{
     }
   }
 
- @media screen and (min-width: 1602px) {
+ @media screen and (min-width: 1502px) {
     
     .dashboard{
         margin-left: 1vw;
@@ -390,5 +390,9 @@ img > i{
     .center, .bottom{
         font-size: 1.3em;
         margin-left: 1vw;
+    }
+
+    .secondname{
+        font-size: 25px;
     }
  } 
