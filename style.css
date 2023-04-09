@@ -9,8 +9,9 @@
     --primary-color: #FFFFFF;
     --secondary-color: rgba(0, 0, 0, 0.5);
     --header-color: #87CEFA;
-    --linear-background: linear-gradient(90deg, rgba(15,32,124,1) 0%, rgba(156,169,233,1) 100%);
+    --linear-background: linear-gradient( 109.6deg,  rgba(209,0,116,1) 11.2%, rgba(110,44,107,1) 91.1% );
 }
+
 
 .main{
     overflow-x:hidden;
@@ -102,11 +103,14 @@ background: var(--linear-background);
     margin-left: 1vw;
     outline:none;
     border-radius: 55px;
-    border-color:aliceblue;
     padding:10px;
     font-size: 1.5em;
-    color:#fff;
-    background: var(--linear-background);
+    background: var(--primary-color);
+}
+
+#search:focus-within{
+   border: 2px solid rgba(209,0,116,1);
+  
 }
 
 .notis{
