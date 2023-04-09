@@ -7,7 +7,7 @@
 
 :root{
     --primary-color: #FFFFFF;
-    --secondary-color: rgba(0, 0, 0, 0.5);
+    --secondary-color: rgba(209,0,116,1);
     --header-color: #87CEFA;
     --linear-background: linear-gradient( 109.6deg,  rgba(209,0,116,1) 11.2%, rgba(110,44,107,1) 91.1% );
 }
@@ -109,7 +109,7 @@ background: var(--linear-background);
 }
 
 #search:focus-within{
-   border: 2px solid rgba(209,0,116,1);
+   border: 2px solid var(--secondary-color);
   
 }
 
@@ -185,14 +185,18 @@ background: var(--linear-background);
     width:10vw;
     height:6vh;
     border-radius: 50px;
+    border: 2px solid var(--secondary-color);
     font-size:18px;
     transition: 'background' .5s ease-in;
     color:#000;
+    background: transparent;
+   
 }
 
 .new:hover, .upload:hover, .share:hover{
     background: var(--linear-background);
     color: #fff;
+    border:none;
 }
 
 .dash-content{
@@ -208,9 +212,10 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 }
 
-.collection{
+.image-collection, .collection{
     margin-left:2vw;
-   
+   margin-top:2vh;
+   margin-bottom: 2vh;
 }
 
 .image-collection{
@@ -262,6 +267,11 @@ backdrop-filter: blur(5px);
     margin-left:-2vw;
     margin-right:2vw;
     width:max(100px, 30vw);
+  
+}
+
+.trend-heading{
+    margin-top: 5vh;
 }
 
 
@@ -270,7 +280,7 @@ backdrop-filter: blur(5px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
-    border: 3px solid rgba(0, 0, 0, 0.6);
+    border: 3px solid var(--secondary-color);
     height:64vh;
     display:grid;
     grid-template-columns: 1fr;
@@ -292,11 +302,18 @@ backdrop-filter: blur(5px);
 
 .commu-day, .announcement {
    border-bottom: 2px solid var(--secondary-color);
+   
+}
+
+.announcement{
+    margin-top: 0;
 }
 
 .joke1, .joke2, .joke3{
     border-bottom: 2px solid var(--secondary-color);
 }
+
+
 
 .upcoming{
 
