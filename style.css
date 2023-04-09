@@ -6,9 +6,10 @@
 }
 
 :root{
-    --primary-color: #F8F8FF;
-    --secondary-color: rgba(0, 0, 0, 0.76);
+    --primary-color: #FFFFFF;
+    --secondary-color: rgba(0, 0, 0, 0.5);
     --header-color: #87CEFA;
+    --linear-background: linear-gradient(90deg, rgba(15,32,124,1) 0%, rgba(156,169,233,1) 100%);
 }
 
 .main{
@@ -28,11 +29,7 @@
     color:#fff;
    z-index:100;
    /* From https://css.glass */
-background: rgba(0, 0, 0, 0.76);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-backdrop-filter: blur(10px);
--webkit-backdrop-filter: blur(2px);
-border: 1px solid rgba(0, 0, 0, 0.45);
+background: var(--linear-background);
   
 }
 
@@ -109,7 +106,7 @@ border: 1px solid rgba(0, 0, 0, 0.45);
     padding:10px;
     font-size: 1.5em;
     color:#fff;
-    background-color: var(--secondary-color);
+    background: var(--linear-background);
 }
 
 .notis{
@@ -185,7 +182,7 @@ border: 1px solid rgba(0, 0, 0, 0.45);
     height:6vh;
     border-radius: 50px;
     font-size:18px;
-    background: var(--secondary-color);
+    background: var(--linear-background);
     color:#fff;
 }
 
@@ -253,13 +250,18 @@ backdrop-filter: blur(5px);
 .dash-content-right{
     display:flex;
     flex-direction:column;
-    margin-left:-3vw;
+    margin-left:-2vw;
+    margin-right:2vw;
     width:max(100px, 30vw);
 }
 
 
 .upcoming, .trending{
-    background-color: aqua;
+    background: var(--primary-color);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 3px solid rgba(0, 0, 0, 0.6);
     height:64vh;
     display:grid;
     grid-template-columns: 1fr;
@@ -268,16 +270,23 @@ backdrop-filter: blur(5px);
     margin-bottom: 8vh;
     grid-gap: 10px;
     padding:8px;
+    border-radius: 20px;
+    width:20vw;
 }
 
-.upcoming > div {
-    border: 2px solid #444;
-    width: 22vw;
+.upcoming > div, .trending > p {
+    
+    width: 18vw;
 }
 
-.trending > p{
-    border: 2px solid #444;
-    width: 22vw;
+
+
+.commu-day, .announcement {
+   border-bottom: 2px solid var(--secondary-color);
+}
+
+.joke1, .joke2, .joke3{
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 .upcoming{
