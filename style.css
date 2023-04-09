@@ -328,8 +328,18 @@ backdrop-filter: blur(5px);
     background-color: transparent;
 }
 
+img > i{
+    color:var(--secondary-color);
+}
 
+.texts{
+    display:flex;
+    justify-content: space-between;
+}
 
+.texts > i{
+    color: var(--secondary-color)
+}
 
 
 
