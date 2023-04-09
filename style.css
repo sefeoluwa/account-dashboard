@@ -53,7 +53,7 @@ background: var(--linear-background);
 
 
 .center, .bottom{
-    font-size: 16px;
+    font-size: 14px;
     margin-left:-1.2vw;
     cursor:pointer;
 }
@@ -125,6 +125,7 @@ background: var(--linear-background);
     border-top: 3px dotted;
     border-radius: 50px;
     transition: transform 0.1s ease-in-out;
+    color:var(--secondary-color);
 }
 
 .bell:hover{
@@ -209,7 +210,7 @@ background: var(--linear-background);
     height:6vh;
     border-radius: 50px;
     border: 2px solid var(--secondary-color);
-    font-size:18px;
+    font-size:15px;
     transition: 'background' .5s ease-in;
     color:#000;
     background: transparent;
@@ -243,7 +244,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .image-collection{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 3vh;
 }
 
@@ -304,7 +305,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .dash-content-right > h3{
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 .trend-heading{
@@ -334,6 +335,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .upcoming > div, .trending > p {
     margin-top: 1vh;
     width: 18vw;
+    font-size:0.9em;
 }
 
 
@@ -368,6 +370,7 @@ img > i{
 .texts{
     display:flex;
     justify-content: space-between;
+    font-size: 0.8em;
 }
 
 .texts > i{
@@ -394,5 +397,13 @@ img > i{
 
     .secondname{
         font-size: 25px;
+    }
+
+    .upcoming > div, .trending > p{
+        font-size:1.2em;
+    }
+
+    .new, .upload, .share{
+        font-size:1.1em;
     }
  } 
